@@ -144,7 +144,7 @@ main {
 .hero {
   max-width: 760px;
 
-  padding: 68px 0 72px;
+  padding: 44px 0 42px;
 }
 
 
@@ -155,7 +155,7 @@ main {
 
   font-family: "IBM Plex Mono", monospace;
 
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
 
   letter-spacing: 0.1em;
@@ -265,7 +265,7 @@ main {
 ========================================= */
 
 .section {
-  padding: 64px 0;
+  padding: 42px 0;
 
   border-top: 1px solid var(--border);
 }
@@ -317,7 +317,7 @@ main {
 
 
 .project-card:hover {
-  transform: translateY(-2px);
+
 
   border-color: var(--border-hover);
 }
@@ -354,7 +354,7 @@ main {
 
   font-family: "IBM Plex Mono", monospace;
 
-  font-size: 10px;
+  font-size: 12px;
 
   text-align: center;
 
@@ -402,7 +402,7 @@ main {
 
   font-family: "IBM Plex Mono", monospace;
 
-  font-size: 9.5px;
+  font-size: 12px;
   font-weight: 500;
 
   letter-spacing: 0.065em;
@@ -426,7 +426,7 @@ main {
 
   color: var(--text-secondary);
 
-  font-size: 14.5px;
+  font-size: 16px;
   line-height: 1.6;
 }
 
@@ -501,7 +501,7 @@ main {
 
 
 .compact-project:hover {
-  transform: translateY(-2px);
+
 
   border-color: var(--border-hover);
 }
@@ -585,7 +585,7 @@ main {
 
   font-family: "IBM Plex Mono", monospace;
 
-  font-size: 9.5px;
+  font-size: 12px;
 
   letter-spacing: 0.075em;
 }
@@ -608,7 +608,7 @@ main {
 
   color: var(--text-secondary);
 
-  font-size: 14.5px;
+  font-size: 16px;
   line-height: 1.6;
 }
 
@@ -676,7 +676,7 @@ main {
 
   color: var(--text-secondary);
 
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.65;
 }
 
@@ -730,7 +730,7 @@ footer {
 
   font-family: "IBM Plex Mono", monospace;
 
-  font-size: 10px;
+  font-size: 12px;
 
   letter-spacing: 0.04em;
 }
@@ -785,7 +785,7 @@ footer {
 
 
   .hero {
-    padding: 52px 0 56px;
+    padding: 36px 0;
   }
 
 
@@ -800,7 +800,7 @@ footer {
 
 
   .section {
-    padding: 52px 0;
+    padding: 36px 0;
   }
 
 
@@ -894,4 +894,50 @@ footer {
     gap: 5px;
   }
 
+}
+
+/* Homepage refinement: preserve the existing palette and grid. */
+.project-grid { align-items: start; }
+.project-image { aspect-ratio: 16 / 9; }
+.cad-image { background: #2e3440; }
+.cad-image img { object-fit: contain; }
+.hardware-image img { object-position: center 48%; }
+.project-body p.project-role { font-size: 14px; color: var(--blue-dark); margin: 0 0 12px; line-height: 1.5; }
+.text-project { border-top: 3px solid var(--blue); }
+.project-meta { gap: 5px 12px; }
+.project-meta span { letter-spacing: .025em; }
+.status { flex-shrink: 0; font-size: 12px; }
+.compact-project p, .earlier-project p { font-size: 16px; }
+.site-nav a, .project-link, .hero-role { font-size: 14px; }
+.project-details { margin-top: 18px; border-top: 1px solid var(--border); padding-top: 12px; }
+.project-details summary { color: var(--blue-dark); cursor: pointer; font-size: 14px; font-weight: 600; padding: 6px 0; }
+.detail-content { padding-top: 12px; }
+.detail-content p, .detail-content dd { font-size: 15px; }
+.detail-content dl { margin: 0; }
+.detail-content dt { font-size: 14px; font-weight: 600; margin-top: 12px; }
+.detail-content dt:first-child { margin-top: 0; }
+.detail-content dd { margin: 3px 0 0; color: var(--text-secondary); }
+.detail-content figure { margin: 18px 0 0; }
+.detail-content img { width: 100%; height: auto; border-radius: 3px; }
+.detail-content figcaption { color: var(--text-secondary); font-size: 13px; margin-top: 6px; }
+.earlier-project { flex-wrap: wrap; }
+.earlier-project > div { flex: 1 1 65%; }
+.earlier-project > details { flex: 1 1 100%; margin: 0; }
+.timeline-item:first-child { border-left: 3px solid var(--blue); padding-left: 20px; }
+a:focus-visible, summary:focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; border-radius: 2px; }
+.skip-link { position: absolute; left: 16px; top: -100px; background: white; padding: 12px 18px; z-index: 10; }
+.skip-link:focus { top: 12px; }
+section[id] { scroll-margin-top: 24px; }
+@media (max-width: 560px) {
+  .hero h1 { font-size: 40px; }
+  .hero-role { font-size: 14px; }
+  .site-nav { flex-wrap: wrap; }
+  .site-nav a { font-size: 14px; padding: 6px 0; }
+  .project-body { padding: 20px; }
+  .project-meta span { overflow-wrap: anywhere; }
+  .project-body h3, .compact-project h3, .timeline-item h3 { overflow-wrap: anywhere; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
 }
