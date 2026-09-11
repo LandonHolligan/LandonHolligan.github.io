@@ -1,308 +1,706 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
 
   <meta
     name="description"
-    content="Landon Holligan aerospace engineering portfolio featuring structures, mechanisms, analysis, manufacturing, and testing."
+    content="Landon Holligan aerospace engineering portfolio featuring structural analysis, mechanical design, mechanisms, manufacturing, and testing."
   />
 
   <title>Landon Holligan | Aerospace Engineering</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Fonts -->
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
 
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
     rel="stylesheet"
-  >
+  />
 
-  <link rel="stylesheet" href="styles.css" />
+  <!-- Site CSS -->
+  <link
+    rel="stylesheet"
+    href="styles.css"
+  />
 </head>
+
 
 <body>
 
-  <header class="site-header">
-    <a class="brand" href="#top">LANDON HOLLIGAN</a>
+  <!-- ========================================
+       HEADER
+  ========================================= -->
 
-    <nav>
-      <a href="#work">Work</a>
-      <a href="#experience">Experience</a>
-      <a href="#about">About</a>
-      <a href="assets/resume.pdf">Résumé</a>
+  <header class="site-header">
+
+    <a
+      class="brand"
+      href="#top"
+    >
+      LANDON HOLLIGAN
+    </a>
+
+
+    <nav class="site-nav">
+
+      <a href="#projects">
+        Projects
+      </a>
+
+      <a href="#experience">
+        Experience
+      </a>
+
+      <a href="#about">
+        About
+      </a>
+
+      <a
+        href="assets/resume.pdf"
+        target="_blank"
+      >
+        Résumé
+      </a>
+
     </nav>
+
   </header>
 
 
+  <!-- ========================================
+       MAIN
+  ========================================= -->
+
   <main id="top">
 
-    <!-- HERO -->
+
+    <!-- ========================================
+         HERO
+    ========================================= -->
+
     <section class="hero">
 
       <div class="eyebrow">
         AEROSPACE ENGINEERING
       </div>
 
-      <h1>Landon Holligan</h1>
+
+      <h1>
+        Landon Holligan
+      </h1>
+
 
       <p class="hero-role">
-        Structures · Mechanisms · Analysis
+        Structural Analysis · Mechanical Design · Test
       </p>
+
 
       <p class="hero-copy">
-        Designing and analyzing mechanical systems for spacecraft,
-        launch vehicles, and experimental hardware.
+        Aerospace engineering BS/MS student at CU Boulder working on
+        spacecraft, launch vehicles, deployable mechanisms, and structural
+        hardware.
       </p>
 
+
       <div class="hero-actions">
-        <a class="button primary" href="#work">
-          View work
+
+        <a
+          class="button primary"
+          href="#projects"
+        >
+          View projects
         </a>
 
-        <a class="button secondary" href="assets/resume.pdf">
+
+        <a
+          class="button secondary"
+          href="assets/resume.pdf"
+          target="_blank"
+        >
           Résumé
         </a>
+
       </div>
 
     </section>
 
 
-    <!-- SELECTED WORK -->
-    <section class="section" id="work">
+    <!-- ========================================
+         MAIN PROJECTS
+    ========================================= -->
 
-      <div class="section-heading">
-        <div>
-          <div class="eyebrow">SELECTED WORK</div>
-          <h2>Engineering Projects</h2>
+    <section
+      class="section"
+      id="projects"
+    >
+
+      <div class="section-title">
+
+        <div class="eyebrow">
+          ENGINEERING WORK
         </div>
 
-        <p>
-          Selected structures, mechanisms, analysis, and hardware development work.
-        </p>
+        <h2>
+          Projects
+        </h2>
+
       </div>
 
 
       <div class="project-grid">
 
-        <!-- GROUND STATION -->
-        <article class="project-card featured">
-
-          <div class="project-image placeholder">
-            <span>GROUND STATION HARDWARE / CAD</span>
-          </div>
-
-          <div class="project-body">
-
-            <div class="project-meta">
-              <span>PRECISION HARDWARE</span>
-              <span>MECHANICAL DESIGN</span>
-            </div>
-
-            <h3>Precision 2-Axis Ground Station</h3>
-
-            <p>
-              Designed and manufactured a two-axis antenna pointing system
-              using drivetrain design, tolerance analysis, structural hardware,
-              fabrication, and assembly.
-            </p>
-
-            <a class="project-link" href="#">
-              View project →
-            </a>
-
-          </div>
-        </article>
-
 
         <!-- AVIONICS BAY -->
+
         <article class="project-card">
 
           <div class="project-image placeholder">
-            <span>AVIONICS BAY CAD / FEA</span>
+
+            <!--
+              Replace this entire div later with:
+
+              <img
+                src="assets/images/avionics-bay.jpg"
+                alt="Sounding rocket avionics bay"
+              />
+            -->
+
+            <span>
+              AVIONICS BAY CAD / FEA
+            </span>
+
           </div>
+
 
           <div class="project-body">
 
-            <div class="project-meta">
-              <span>STRUCTURES</span>
-              <span>FEA</span>
-              <span>FLIGHT HARDWARE</span>
+            <div class="project-top-row">
+
+              <div class="project-meta">
+
+                <span>
+                  FEMAP / NASTRAN
+                </span>
+
+                <span>
+                  FLIGHT STRUCTURES
+                </span>
+
+              </div>
+
+
+              <span class="status">
+                IN PROGRESS
+              </span>
+
             </div>
 
-            <h3>Sounding Rocket Avionics Bay</h3>
+
+            <h3>
+              Sounding Rocket Avionics Bay
+            </h3>
+
 
             <p>
-              Structural design and verification of a space-shot sounding
-              rocket avionics bay using quasi-static, vibration, and hardware
-              load analysis.
+              Leading structural development of the avionics bay for a
+              space-shot sounding rocket. The design has completed concept
+              review and PCB modal analysis, with full vehicle load analysis
+              planned once boundary conditions and loads are finalized.
             </p>
 
-            <a class="project-link" href="#">
+
+            <a
+              class="project-link"
+              href="#"
+            >
               View project →
             </a>
 
           </div>
+
         </article>
 
 
-        <!-- DISH -->
+
+        <!-- GROUND STATION -->
+
         <article class="project-card">
 
           <div class="project-image placeholder">
-            <span>DISH / TEST HARDWARE</span>
+
+            <!--
+              Replace later with:
+
+              <img
+                src="assets/images/ground-station.jpg"
+                alt="Two-axis ground station"
+              />
+            -->
+
+            <span>
+              GROUND STATION / DISH HARDWARE
+            </span>
+
           </div>
+
 
           <div class="project-body">
 
             <div class="project-meta">
-              <span>STRUCTURAL DESIGN</span>
-              <span>ADDITIVE MANUFACTURING</span>
+
+              <span>
+                MECHANICAL DESIGN
+              </span>
+
+              <span>
+                TOLERANCE ANALYSIS
+              </span>
+
+              <span>
+                MANUFACTURING
+              </span>
+
             </div>
 
-            <h3>5.8 GHz Ground Station Dish</h3>
+
+            <h3>
+              2-Axis Ground Station
+            </h3>
+
 
             <p>
-              Developed a lightweight 3D-printed dish structure around
-              geometric accuracy, stiffness, manufacturing constraints,
-              and assembly requirements.
+              Designed and manufactured an azimuth-elevation antenna gimbal
+              and integrated 5.8 GHz dish, including drivetrain layout,
+              tolerance analysis, structural design, fabrication, and assembly.
             </p>
 
-            <a class="project-link" href="#">
+
+            <a
+              class="project-link"
+              href="#"
+            >
               View project →
             </a>
 
           </div>
+
         </article>
+
 
 
         <!-- SWARM-EX -->
-        <article class="project-card">
 
-          <div class="project-topline">
-            <span class="status">IN PROGRESS</span>
-          </div>
-
-          <div class="project-body">
-
-            <div class="project-meta">
-              <span>CUBESAT</span>
-              <span>MECHANISMS</span>
-              <span>STRUCTURES</span>
-            </div>
-
-            <h3>SWARM-EX Deployable Structures</h3>
-
-            <p>
-              Developing spacecraft deployment hardware with emphasis on hinge
-              design, structural verification, deployment reliability,
-              and fabrication.
-            </p>
-
-          </div>
-        </article>
-
-
-        <!-- DEPLOYABLE BOOM -->
-        <article class="project-card">
-
-          <div class="project-topline">
-            <span class="status">IN PROGRESS</span>
-          </div>
-
-          <div class="project-body">
-
-            <div class="project-meta">
-              <span>DEPLOYABLE STRUCTURES</span>
-              <span>TRADE STUDIES</span>
-            </div>
-
-            <h3>1 m CubeSat Deployable Boom</h3>
-
-            <p>
-              Designing a compact deployable boom around packaging,
-              stiffness, payload capacity, magnetic compatibility,
-              and spacecraft material constraints.
-            </p>
-
-          </div>
-        </article>
-
-
-        <!-- DLA -->
         <article class="project-card">
 
           <div class="project-image placeholder">
-            <span>PLASMA SIMULATION / RESULTS</span>
+
+            <!--
+              Replace later with:
+
+              <img
+                src="assets/images/swarm-ex.jpg"
+                alt="SWARM-EX solar array deployment system"
+              />
+            -->
+
+            <span>
+              SWARM-EX CAD / MECHANISM
+            </span>
+
           </div>
+
 
           <div class="project-body">
 
-            <div class="project-meta">
-              <span>SPACE SYSTEMS</span>
-              <span>SIMULATION</span>
-              <span>RESEARCH</span>
+            <div class="project-top-row">
+
+              <div class="project-meta">
+
+                <span>
+                  ANSYS
+                </span>
+
+                <span>
+                  DEPLOYMENT MECHANISMS
+                </span>
+
+              </div>
+
+
+              <span class="status">
+                IN PROGRESS
+              </span>
+
             </div>
 
-            <h3>Electrostatic Tractor Supercharging</h3>
+
+            <h3>
+              SWARM-EX Solar Array Deployment System
+            </h3>
+
 
             <p>
-              Modeled spacecraft charging, plasma wakes, and electron-beam
-              behavior using SPIS, SIMION, and MATLAB for electrostatic
-              debris-removal research.
+              Developing the CubeSat's dual-deploy solar-array hinge system
+              while maturing the structural model and preparing the mechanism
+              for detailed structural and deployment analysis.
             </p>
 
-            <a class="project-link" href="#">
+
+            <a
+              class="project-link"
+              href="#"
+            >
               View project →
             </a>
 
           </div>
+
+        </article>
+
+
+
+        <!-- DLA -->
+
+        <article class="project-card">
+
+          <div class="project-image placeholder">
+
+            <!--
+              Replace later with:
+
+              <img
+                src="assets/images/electrostatic-tractor.jpg"
+                alt="Electrostatic tractor plasma simulation"
+              />
+            -->
+
+            <span>
+              SPIS / PLASMA SIMULATION
+            </span>
+
+          </div>
+
+
+          <div class="project-body">
+
+            <div class="project-meta">
+
+              <span>
+                SPIS
+              </span>
+
+              <span>
+                SIMION
+              </span>
+
+              <span>
+                MATLAB
+              </span>
+
+            </div>
+
+
+            <h3>
+              Electrostatic Tractor Supercharging
+            </h3>
+
+
+            <p>
+              Investigated spacecraft charging and plasma-wake behavior for
+              electrostatic debris removal using SPIS, SIMION, and MATLAB,
+              including validation of supercharging in a realistic plasma
+              environment.
+            </p>
+
+
+            <a
+              class="project-link"
+              href="#"
+            >
+              View research →
+            </a>
+
+          </div>
+
         </article>
 
       </div>
+
     </section>
 
 
-    <!-- EXPERIENCE -->
-    <section class="section split" id="experience">
+    <!-- ========================================
+         CURRENT + ADDITIONAL PROJECTS
+    ========================================= -->
+
+    <section class="section">
+
+      <div class="section-title">
+
+        <div class="eyebrow">
+          CURRENT & ADDITIONAL WORK
+        </div>
+
+        <h2>
+          More Projects
+        </h2>
+
+      </div>
+
+
+      <div class="compact-project-grid">
+
+
+        <!-- DEPLOYABLE BOOM -->
+
+        <article class="compact-project">
+
+          <div class="compact-project-header">
+
+            <h3>
+              1 m CubeSat Deployable Boom
+            </h3>
+
+            <span class="status">
+              IN PROGRESS
+            </span>
+
+          </div>
+
+
+          <p>
+            Designing a one-meter deployable boom within a 1.5U packaging
+            constraint. Current work is focused on material trade studies,
+            concept selection, and deployment architecture.
+          </p>
+
+
+          <div class="project-meta">
+
+            <span>
+              DEPLOYABLES
+            </span>
+
+            <span>
+              TRADE STUDIES
+            </span>
+
+            <span>
+              STRUCTURES
+            </span>
+
+          </div>
+
+
+          <a
+            class="project-link"
+            href="#"
+          >
+            View project →
+          </a>
+
+        </article>
+
+
+
+        <!-- HYPERLOOP -->
+
+        <article class="compact-project">
+
+          <h3>
+            Hyperloop TBM Soil Gripper
+          </h3>
+
+
+          <p>
+            Contributed to the design of an inflatable soil-gripping system,
+            focusing on the protective shroud, structural load path, and hand
+            calculations for welded components.
+          </p>
+
+
+          <div class="project-meta">
+
+            <span>
+              MECHANICAL DESIGN
+            </span>
+
+            <span>
+              HAND CALCULATIONS
+            </span>
+
+            <span>
+              STRUCTURES
+            </span>
+
+          </div>
+
+
+          <a
+            class="project-link"
+            href="#"
+          >
+            View project →
+          </a>
+
+        </article>
+
+
+
+        <!-- RASC-AL -->
+
+        <article class="compact-project">
+
+          <h3>
+            RASC-AL Lunar Communications Architecture
+          </h3>
+
+
+          <p>
+            Developed the lunar surface communications architecture for
+            CU Boulder's REGENESIS concept, including S-band surface links,
+            K-band LunaNet backhaul, link budgets, power estimates, and
+            communications-tower CAD.
+          </p>
+
+
+          <div class="project-meta">
+
+            <span>
+              LINK BUDGETS
+            </span>
+
+            <span>
+              RF SYSTEMS
+            </span>
+
+            <span>
+              CAD
+            </span>
+
+          </div>
+
+
+          <a
+            class="project-link"
+            href="#"
+          >
+            View project →
+          </a>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================================
+         EXPERIENCE
+    ========================================= -->
+
+    <section
+      class="section split"
+      id="experience"
+    >
 
       <div>
-        <div class="eyebrow">EXPERIENCE</div>
-        <h2>Engineering Experience</h2>
+
+        <div class="eyebrow">
+          EXPERIENCE
+        </div>
+
+        <h2>
+          Engineering Experience
+        </h2>
+
       </div>
 
 
       <div class="timeline">
 
+
+        <!-- TENDEG -->
+
         <div class="timeline-item">
 
           <div class="timeline-date">
-            CURRENT
+            JUN 2026 — AUG 2026
           </div>
 
-          <h3>Aerospace Structures & Mechanical Design</h3>
+
+          <h3>
+            Tendeg · Structural Analysis Intern
+          </h3>
+
 
           <p>
-            Structures, mechanisms, finite-element analysis,
-            precision hardware, manufacturing, testing,
-            and system integration.
+            Finite-element analysis and vibration-test correlation for
+            deployable spacecraft hardware, including random-vibration FEM
+            correlation within 5% and boom stiffness correlation within 3%.
           </p>
 
         </div>
 
 
+
+        <!-- SRL -->
+
         <div class="timeline-item">
 
           <div class="timeline-date">
-            PROFESSIONAL EXPERIENCE
+            MAY 2025 — PRESENT
           </div>
 
-          <h3>Engineering Internship</h3>
+
+          <h3>
+            CU Sounding Rocket Laboratory · Avionics Structures Lead
+          </h3>
+
 
           <p>
-            Additional professional project details will be added as
-            releasable material becomes available.
+            Leading structural and mechanical development of avionics and
+            ground-station hardware for a space-shot sounding rocket program.
+          </p>
+
+        </div>
+
+
+
+        <!-- SWARM-EX -->
+
+        <div class="timeline-item">
+
+          <div class="timeline-date">
+            JUN 2026 — PRESENT
+          </div>
+
+
+          <h3>
+            SWARM-EX · Structures Lead
+          </h3>
+
+
+          <p>
+            Leading development of the spacecraft's deployable solar-array
+            structure while supporting structural-model maturity,
+            documentation, and onboarding of new team members.
           </p>
 
         </div>
@@ -312,36 +710,109 @@
     </section>
 
 
-    <!-- ABOUT -->
-    <section class="section split" id="about">
+    <!-- ========================================
+         EARLIER WORK
+    ========================================= -->
+
+    <section class="section">
+
+      <div class="section-title">
+
+        <div class="eyebrow">
+          EARLIER WORK
+        </div>
+
+        <h2>
+          Earlier Engineering Projects
+        </h2>
+
+      </div>
+
+
+      <div class="earlier-work">
+
+
+        <!-- BALLOON SATELLITE -->
+
+        <article class="earlier-project">
+
+          <div>
+
+            <h3>
+              High-Altitude Balloon Satellite
+            </h3>
+
+
+            <p>
+              Designed the payload housing and primary structure for a
+              high-altitude balloon satellite and contributed to structural
+              calculations and environmental testing.
+            </p>
+
+          </div>
+
+
+          <a
+            class="project-link"
+            href="#"
+          >
+            View project →
+          </a>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================================
+         ABOUT
+    ========================================= -->
+
+    <section
+      class="section split"
+      id="about"
+    >
 
       <div>
-        <div class="eyebrow">ABOUT</div>
-        <h2>Design. Analyze. Build. Test.</h2>
+
+        <div class="eyebrow">
+          ABOUT
+        </div>
+
+        <h2>
+          About
+        </h2>
+
       </div>
 
 
       <div class="about-copy">
 
         <p>
-          I am an aerospace engineering student focused on structures,
-          mechanisms, and mechanical systems.
+          I am completing a concurrent BS/MS in Aerospace Engineering at
+          the University of Colorado Boulder, with graduate study focused
+          on fluids, structures, and materials.
         </p>
 
+
         <p>
-          My work spans conceptual design, CAD, structural analysis,
-          manufacturing, assembly, testing, and system-level engineering.
-          I am particularly interested in problems where analysis directly
-          informs real hardware.
+          Most of my experience has been in structural analysis and
+          mechanical design for aerospace hardware, with work spanning FEA,
+          vibration testing, mechanisms, manufacturing, and test correlation.
         </p>
 
 
         <div class="contact-links">
 
+          <!-- Replace with your actual email -->
           <a href="mailto:you@example.com">
             Email
           </a>
 
+
+          <!-- Replace with your actual LinkedIn URL -->
           <a
             href="https://www.linkedin.com/"
             target="_blank"
@@ -349,6 +820,7 @@
           >
             LinkedIn
           </a>
+
 
           <a
             href="https://github.com/LandonHolligan"
@@ -367,6 +839,10 @@
   </main>
 
 
+  <!-- ========================================
+       FOOTER
+  ========================================= -->
+
   <footer>
 
     <span>
@@ -380,7 +856,9 @@
   </footer>
 
 
+  <!-- Site JavaScript -->
   <script src="script.js"></script>
 
 </body>
+
 </html>
