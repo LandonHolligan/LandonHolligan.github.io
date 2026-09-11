@@ -1,30 +1,35 @@
-# Landon Holligan · Engineering Portfolio
+# Landon Holligan - Engineering Portfolio
 
-Static HTML, CSS, and JavaScript website for GitHub Pages. No build step is required.
+Static HTML/CSS/JavaScript for the existing GitHub Pages repository. No build or installation step is required.
 
-## Apply this update
+## Import this update
 
-1. Extract the ZIP on your computer.
-2. Copy the contents of `LandonHolligan.github.io-main` into your existing repository folder, replacing matching files. Do not put the containing folder inside the repository.
-3. Review the changes, commit, and push to `main`. Your existing GitHub Pages configuration publishes from the repository root.
+1. Extract `LandonHolligan-portfolio-complete-update.zip`.
+2. Open your existing `LandonHolligan/LandonHolligan.github.io` repository on GitHub and choose `main`.
+3. Choose **Add file > Upload files**. Drag the extracted files and the `assets` folder into the upload area at the repository root. Upload their contents, not the ZIP or a containing folder.
+4. Review the upload and commit. Keep the existing GitHub Pages configuration (`main`, root).
+5. After the Pages workflow completes, check the homepage and the five project pages.
 
-If uploading through GitHub in a browser, upload the extracted files and folders to the repository root, not the ZIP itself. Replace `index.html`, `styles.css`, and `README.md`, and add `assets/images/New_Dish.PNG`. Other original files are retained.
+For a local clone, merge these files into your existing repository, replacing matching files. Preserve files not included in the ZIP. Do not delete the repository or replace the entire `assets` folder. If your file manager cannot merge folders, copy the new `figures` and `documents` folders into `assets` individually, then copy the root HTML/CSS/JS files. Commit and push when ready.
 
-## Homepage update
+## Preserve the current dish image
 
-- Corrected case-sensitive avionics-bay and ground-station image paths.
-- Corrected the LinkedIn URL and retained the existing résumé and contact links.
-- Reduced hero and section spacing; improved small-label readability and keyboard focus.
-- Replaced nonfunctional project links with expandable contribution/status summaries. RASC-AL links to the existing team report.
-- Removed empty image placeholders; SWARM-EX and DLA use text-led cards until project-page visuals are selected.
-- Added the supplied dish CAD image to the ground-station details.
-- Preserved the four primary projects, additional projects, experience, earlier work, and about sections.
-- Kept the original script and all existing assets.
+**Keep your existing `assets/images/New_Dish.png`.** The ground-station page references that exact lowercase extension. This update intentionally omits the older `New_Dish.PNG` attachment so it cannot overwrite your revised image. The ZIP is an update for the existing repository; it relies on that one existing image.
 
-## Content notes before publication
+## Included
 
-The background handoff is authoritative for current project status. The existing résumé has stronger completion claims about avionics analysis, SWARM-EX, and 0.2° pointing accuracy. The résumé is preserved unchanged; reconcile those claims separately before publishing an updated résumé.
+- Updated homepage with project imagery, corrected sled modal/random-vibration description, primary ground-station design ownership, measured average angular error, and mentoring responsibilities.
+- Five illustrated pages: `ground-station.html`, `avionics-bay.html`, `dla.html`, `hyperloop.html`, `balloon-payload.html`.
+- Original figures extracted from the supplied decks, with figure captions and source slide references.
+- Six original PowerPoint files and five illustrated project-summary PDFs. The PDFs are summaries, not full slide conversions. Original PowerPoints preserve equations and source material that the slide renderer did not fully reproduce.
+- Existing resume, images, RASC-AL report, and footer script preserved.
 
-No achieved pointing accuracy or 71% supercharging result is claimed on the homepage. Standalone case studies have not been built; the ground-station case study is next.
+SWARM-EX and the deployable boom remain concise homepage summaries reflecting ongoing work. RASC-AL retains its report link.
 
-Validation: local HTML asset and fragment targets, JavaScript syntax, image decoding, and responsive CSS rules were checked. Browser-rendered desktop/mobile QA was not performed in this environment. The website has not been deployed.
+## Validation and limitations
+
+Local page links, fragments, image decoding, JavaScript syntax, and ZIP contents were checked. All PDF pages were rendered and visually reviewed. Browser-rendered desktop/mobile QA was not performed. Nothing has been deployed by the assistant.
+
+The commanded-versus-measured gimbal error is approximately 0.2 degrees averaged over a small number of tests. It is not a maximum error bound or dynamic tracking result. Analysis and research values are labeled as predictions or simulation results.
+
+The supplied resume is unchanged. Current project status on the website follows the user's latest clarifications.
