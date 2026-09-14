@@ -966,3 +966,17 @@ section[id] { scroll-margin-top: 24px; }
 .downloads a { display: block; width: fit-content; color: var(--blue-dark); text-decoration: underline; text-underline-offset: 3px; margin: 14px 0; }
 @media(max-width:560px) { .case-result { padding: 12px 16px; } .earlier-image { width: 100%; height: 180px; } .case-section h2 { font-size: 24px; } .case-main { overflow-wrap: anywhere; } }
 @media print { .site-header, .back-link, .downloads, footer { display: none; } .case-main { width: 100%; } .case-section, figure { break-inside: avoid; } body { background: white; } }
+
+/* Highlighted projects: wide cards, one project per row. */
+.highlighted-projects { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+.highlighted-projects .project-card { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.2fr); align-items: stretch; }
+.highlighted-projects .project-image { height: 100%; min-height: 290px; aspect-ratio: auto; border-bottom: 0; border-right: 1px solid var(--border); }
+.highlighted-projects .project-image img { width: 100%; height: 100%; object-fit: contain; }
+.highlighted-projects .hardware-image img { object-fit: cover; }
+.highlighted-projects .project-body { padding: 32px; }
+.highlighted-projects .text-project { grid-template-columns: minmax(0, 1fr); }
+@media (max-width: 720px) {
+  .highlighted-projects .project-card { grid-template-columns: minmax(0, 1fr); }
+  .highlighted-projects .project-image { height: 240px; min-height: 0; border-right: 0; border-bottom: 1px solid var(--border); }
+  .highlighted-projects .project-body { padding: 24px; }
+}
